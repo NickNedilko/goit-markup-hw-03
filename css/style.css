@@ -35,6 +35,16 @@ body{
     overflow: hidden;
     }
     /* Стилизация Хедера */
+.container{
+    
+    width: 1230px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 2px solid tomato;
+}
+
 .logo{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -63,8 +73,10 @@ body{
 .hero-section{
     background: #2F303A;
     height: 600px;
+    
 }    
 .hero-title{
+    margin: 0;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;  
@@ -75,6 +87,7 @@ body{
     color: #FFFFFF;
 }
 .button{
+    display: inline-block; 
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -84,7 +97,12 @@ body{
     letter-spacing: 0.06em;
     cursor: pointer;
 }
-.main.button{    background-color: #2196F3;
+.main.button{
+    padding: 10px 32px;
+    margin-top: 30px;
+    border-radius: 4px;
+    min-width: 200px;
+    background-color: #2196F3;
     color:#FFFFFF ;
 }
 .button:hover, .button:focus{
