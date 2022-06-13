@@ -19,6 +19,8 @@ body{
 
 .list{
     list-style-type: none;
+    padding: 0px;
+    margin: 0px;
     }
     
 .visually-hidden{
@@ -36,7 +38,6 @@ body{
     }
     /* Стилизация Хедера */
 .container{
-    
     width: 1230px;
     margin-right: auto;
     margin-left: auto;
@@ -72,15 +73,18 @@ body{
     /* Стилизация основного контента страницы */
 .hero-section{
     background: #2F303A;
-    height: 600px;
+    
+    text-align: center;
+    margin-bottom: 94px;
     
 }    
 .hero-title{
-    margin: 0;
+    border: 2px solid tomato;
+    margin-top: 0;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;  
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
@@ -99,10 +103,11 @@ body{
 }
 .main.button{
     padding: 10px 32px;
-    margin-top: 30px;
+    margin: 0 auto;
     border-radius: 4px;
     min-width: 200px;
     background-color: #2196F3;
+    border: 0px;
     color:#FFFFFF ;
 }
 .button:hover, .button:focus{
@@ -110,6 +115,8 @@ body{
     background: #188CE8;
 }
 .section-title{
+    margin-top:94px;
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -118,6 +125,7 @@ body{
     color:var(--title-text-color);
 }
 .list-qualities-title{
+    margin: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -126,12 +134,25 @@ body{
     color: var(--title-text-color);
 }
 .text{
+
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
 }
+.list-images{
+    display: flex;
+    margin-left: -15px;
+    margin-bottom: 94px;
+    
+}
+.images{
+    margin-left: 30px;
+    width: 370px;
+}
             /* Стилизация секции наша команда */
 .list-team-title{
+    margin-top: 30px;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -144,9 +165,19 @@ body{
     line-height: 1.19;
     text-align: center;
 }
+.list-team{
+    display: flex;
+    margin-left: -15px;
+}
+
+.team-item{
+    width: 270px;
+    margin-left: 30px;
+}
 
               /* Стилизация футера */
 .footer{
+    margin-top: 94px;
     background: #2F303A;
     height: 252;
 }
