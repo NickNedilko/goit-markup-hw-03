@@ -1,0 +1,176 @@
+/* Основной цвет страницы #757575 */
+/* Цвет заголовков и кнопок #212121 */
+
+:root{
+    --primiry-text-color: #757575;
+    --title-text-color: #212121;
+    --main-font-family: roboto, sans-serif;;
+    }
+      /* Общие правила для стилизвции страцы */
+body{
+    color: var(--primiry-text-color);
+    font-family: var(--main-font-family);
+    letter-spacing: 0.03em;
+    }
+
+.link{
+     text-decoration: none;
+    }
+
+.list{
+    list-style-type: none;
+    }
+    
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+        
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    }
+    /* Стилизация Хедера */
+.logo{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+         
+     color: #2196F3;
+}
+.logo-accient{
+    color: #212121;
+    }
+
+.site-nav, .header-contact {
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 1.14;
+     letter-spacing: 0.02em; 
+    }
+.site-nav .link{
+    color: #212121;
+}
+.header-contact .link {
+    color: var(--primiry-text-color)
+}
+    /* Стилизация основного контента страницы */
+.hero-section{
+    background: #2F303A;
+    height: 600px;
+}    
+.hero-title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;  
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+.button{
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+.main.button{    background-color: #2196F3;
+    color:#FFFFFF ;
+}
+.button:hover, .button:focus{
+    color:#FFFFFF;
+    background: #188CE8;
+}
+.section-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    
+    color:var(--title-text-color);
+}
+.list-qualities-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    
+    color: var(--title-text-color);
+}
+.text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+            /* Стилизация секции наша команда */
+.list-team-title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    
+    color:var(--title-text-color)
+}
+.list-team .text{
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+              /* Стилизация футера */
+.footer{
+    background: #2F303A;
+    height: 252;
+}
+.footer .logo-accient{
+    color: #FFFFFF;
+}
+.adress{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+.list-footer .link{
+     font-style:normal;
+     color: rgba(255, 255, 255, 0.6);
+}
+.text-adress{
+    color: #FFFFFF;
+}
+                 /* СТИЛИЗАЦИЯ СТРАНИЦЫ ПОРТФОЛИО */
+
+.list-buttons .button{
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+}
+.list-example-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    
+    color:var(--title-text-color);
+}
+.list-example-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+}
+/* Такой вопрос почему когда я вверху ставлю данные стили ниже которые, они применятются не к всем ссылкам, а когда разместил в подвале то все хорошо работает? */
+.link:hover,
+.link:focus {
+    color: #2196F3
+}
