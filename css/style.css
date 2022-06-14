@@ -12,9 +12,13 @@ body{
     font-family: var(--main-font-family);
     letter-spacing: 0.03em;
     }
-
+img{
+    display: block;
+}
 .link{
      text-decoration: none;
+     padding: 0px;
+     
     }
 
 .list{
@@ -47,6 +51,7 @@ body{
 }
 
 .logo{
+    
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -58,19 +63,59 @@ body{
     color: #212121;
     }
 
-.site-nav, .header-contact {
+.menu-nav, .header-contact {
+     display: flex;
      font-weight: 500;
      font-size: 14px;
      line-height: 1.14;
-     letter-spacing: 0.02em; 
+     letter-spacing: 0.02em;
+     align-items: center; 
     }
-.site-nav .link{
+/* .menu-nav .item:last-child{
+    margin-right: 0px;    
+}
+.header-contact .item:last-child{
+    margin-right: 0px; 
+}
+  .menu-nav .item:first-child{
+    margin-right: 93px;
+}
+.menu-nav > .item , .header-contact > .item{
+    margin-right: 50px;
+     
+} */
+
+.menu-nav .item +.item, .header-contact .item +.item{
+    margin-left: 50px;
+}
+.menu-nav .item:first-child{
+    margin-right: 93px;
+}
+.header-contact {
+    margin-left: auto;
+}
+.header{
+    display: flex;
+    align-items:center;
+}    
+.menu-nav .link{
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 32px;
+
     color: #212121;
+    
 }
 .header-contact .link {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 32px;
+
     color: var(--primiry-text-color)
 }
     /* Стилизация основного контента страницы */
+    /* Стилизация секции герой */
+
 .hero-section{
     background: #2F303A;
     
@@ -103,7 +148,6 @@ body{
 }
 .main.button{
     padding: 10px 32px;
-    margin: 0 auto;
     border-radius: 4px;
     min-width: 200px;
     background-color: #2196F3;
@@ -114,6 +158,8 @@ body{
     color:#FFFFFF;
     background: #188CE8;
 }
+/* стилизация секции наши качества */
+
 .section-title{
     margin-top:94px;
     margin-bottom: 50px;
@@ -124,8 +170,21 @@ body{
     
     color:var(--title-text-color);
 }
+.list-qualities{
+    display: flex;
+    justify-content: space-between;
+
+}
+.qualities-description{
+    width: 270px;
+    margin-left: 30px;
+}
+.qualities-description:first-child{
+    margin-left: 0px;
+}
 .list-qualities-title{
-    margin: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -134,15 +193,19 @@ body{
     color: var(--title-text-color);
 }
 .text{
-
+    margin-top: 10px;
+    margin-bottom: 0px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
 }
+/* Стилизация секции с картинками */
+
 .list-images{
     display: flex;
-    margin-left: -15px;
+    margin-left: -30px;
     margin-bottom: 94px;
+    justify-content: space-between;
     
 }
 .images{
@@ -181,6 +244,12 @@ body{
     background: #2F303A;
     height: 252;
 }
+.footer-logo{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+}
+
 .footer .logo-accient{
     color: #FFFFFF;
 }
@@ -188,12 +257,16 @@ body{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+    margin-bottom: 60px;
 }
 .list-footer .link{
+    margin-bottom: 9px;
      font-style:normal;
      color: rgba(255, 255, 255, 0.6);
 }
+
 .text-adress{
+    margin-bottom: 9px;
     color: #FFFFFF;
 }
                  /* СТИЛИЗАЦИЯ СТРАНИЦЫ ПОРТФОЛИО */
@@ -204,6 +277,23 @@ body{
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
+}
+.list-buttons{
+    display: flex;
+    margin-top: 94px;
+    margin-bottom: 50px;
+}
+
+.list-example{
+    display: flex;
+    flex-wrap: wrap;
+    outline: 2px solid tomato;
+    margin: -30px;
+}
+.portfolio-item{ 
+    width: calc((100%/3)-30px);
+    margin: 30px;
+    outline: 2px solid tomato;
 }
 .list-example-title{
     font-weight: 700;
