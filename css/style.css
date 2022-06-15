@@ -42,12 +42,12 @@ img{
     }
     /* Стилизация Хедера */
 .container{
-    width: 1230px;
+    width: 1170px;
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
-    border: 2px solid tomato;
+    
 }
 
 .logo{
@@ -89,7 +89,7 @@ img{
     margin-left: 50px;
 }
 .menu-nav .item:first-child{
-    margin-right: 93px;
+    margin-right: 43px;
 }
 .header-contact {
     margin-left: auto;
@@ -124,7 +124,6 @@ img{
     
 }    
 .hero-title{
-    border: 2px solid tomato;
     margin-top: 0;
     margin-bottom: 30px;
     font-weight: 900;
@@ -135,17 +134,21 @@ img{
 
     color: #FFFFFF;
 }
+
 .button{
-    display: inline-block; 
+    padding: 6px 22px;
+    margin-left: 8px;
     font-family: inherit;
-    font-weight: 700;
+    display: inline-block; 
     font-size: 16px;
-    line-height: 1.88;
+    font-weight: 700;
     align-items: center;
-    text-align: center;
+    line-height: 1.88;
     letter-spacing: 0.06em;
-    cursor: pointer;
+    text-align: center;
+    cursor:  pointer;
 }
+
 .main.button{
     padding: 10px 32px;
     border-radius: 4px;
@@ -155,6 +158,8 @@ img{
     color:#FFFFFF ;
 }
 .button:hover, .button:focus{
+    border-radius: 4px;
+    border-color:transparent;
     color:#FFFFFF;
     background: #188CE8;
 }
@@ -172,16 +177,15 @@ img{
 }
 .list-qualities{
     display: flex;
-    justify-content: space-between;
+    margin-left: -30px;;
 
 }
 .qualities-description{
     width: 270px;
     margin-left: 30px;
 }
-.qualities-description:first-child{
-    margin-left: 0px;
-}
+
+
 .list-qualities-title{
     margin-top: 0px;
     margin-bottom: 10px;
@@ -230,7 +234,7 @@ img{
 }
 .list-team{
     display: flex;
-    margin-left: -15px;
+    margin-left: -30px;
 }
 
 .team-item{
@@ -245,6 +249,7 @@ img{
     height: 252;
 }
 .footer-logo{
+    
     margin-top: 60px;
     margin-bottom: 20px;
     margin-left: 0px;
@@ -280,11 +285,20 @@ img{
 }
 .list-buttons{
     display: flex;
+    justify-content: center;
     margin-top: 94px;
     margin-bottom: 50px;
+    
 }
-
 .list-example{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+    justify-content: space-between;
+    
+}
+/* .list-example{
     display: flex;
     flex-wrap: wrap;
     outline: 2px solid tomato;
@@ -293,7 +307,14 @@ img{
 .portfolio-item{ 
     width: calc((100%/3)-30px);
     margin: 30px;
-    outline: 2px solid tomato;
+    outline: 2px solid tomato; 
+}*/
+.portfolio-item{
+   
+    flex-basis: ((100%/3)-30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+    
 }
 .list-example-title{
     font-weight: 700;
