@@ -246,11 +246,10 @@ img{
 .footer{
     margin-top: 94px;
     background: #2F303A;
-    height: 252;
+    юheight: 252;
 }
 .footer-logo{
     
-    margin-top: 60px;
     margin-bottom: 20px;
     margin-left: 0px;
 }
@@ -262,7 +261,7 @@ img{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    margin-bottom: 60px;
+    
 }
 .list-footer .link{
     margin-bottom: 9px;
