@@ -48,8 +48,11 @@ img{
     padding-left: 15px;
     padding-right: 15px;
     
+    
 }
-
+.section{
+    outline: 2px solid tomato;
+}
 .logo{
     
     font-family: 'Raleway', sans-serif;
@@ -117,11 +120,12 @@ img{
     /* Стилизация секции герой */
 
 .hero-section{
-    background: #2F303A;
-    
+    padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
-    margin-bottom: 94px;
-    
+
+    background: #2F303A;
+     
 }    
 .hero-title{
     margin-top: 0;
@@ -155,18 +159,24 @@ img{
     min-width: 200px;
     background-color: #2196F3;
     border: 0px;
+
     color:#FFFFFF ;
 }
 .button:hover, .button:focus{
     border-radius: 4px;
     border-color:transparent;
+
     color:#FFFFFF;
     background: #188CE8;
 }
 /* стилизация секции наши качества */
-
+.qualites-section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+}
 .section-title{
-    margin-top:94px;
+    margin-top: 0px;
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -184,7 +194,6 @@ img{
     width: 270px;
     margin-left: 30px;
 }
-
 
 .list-qualities-title{
     margin-top: 0px;
@@ -204,11 +213,15 @@ img{
     line-height: 1.71;
 }
 /* Стилизация секции с картинками */
+.images-section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+}
 
 .list-images{
     display: flex;
     margin-left: -30px;
-    margin-bottom: 94px;
     justify-content: space-between;
     
 }
@@ -217,6 +230,12 @@ img{
     width: 370px;
 }
             /* Стилизация секции наша команда */
+
+.team-section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+   
+}
 .list-team-title{
     margin-top: 30px;
     margin-bottom: 10px;
@@ -244,12 +263,11 @@ img{
 
               /* Стилизация футера */
 .footer{
-    margin-top: 94px;
     background: #2F303A;
     
 }
 .footer-logo{
-    margin-top: 60px;
+    padding-top: 60px;
     margin-bottom: 20px;
     margin-left: 0px;
 }
@@ -258,6 +276,7 @@ img{
     color: #FFFFFF;
 }
 .adress{
+    padding-bottom: 60px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -275,6 +294,10 @@ img{
 }
                  /* СТИЛИЗАЦИЯ СТРАНИЦЫ ПОРТФОЛИО */
 
+.works-section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .list-buttons .button{
     font-family: inherit;
     font-weight: 500;
@@ -285,7 +308,6 @@ img{
 .list-buttons{
     display: flex;
     justify-content: center;
-    margin-top: 94px;
     margin-bottom: 50px;
     
 }
