@@ -18,7 +18,7 @@ img{
 .link{
      text-decoration: none;
      padding: 0px;
-     
+     color: inherit;
     }
 
 .list{
@@ -42,7 +42,7 @@ img{
     }
     /* Стилизация Хедера */
 .container{
-    width: 1170px;
+    width: 1200px;
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
@@ -100,6 +100,7 @@ img{
 .header{
     display: flex;
     align-items:center;
+    border-bottom: 1px solid #ececec;
 }    
 .menu-nav .link{
     display: block;
@@ -141,7 +142,7 @@ img{
 
 .button{
     padding: 6px 22px;
-    margin-left: 8px;
+    
     font-family: inherit;
     display: inline-block; 
     font-size: 16px;
@@ -214,7 +215,6 @@ img{
 }
 /* Стилизация секции с картинками */
 .images-section{
-    padding-top: 94px;
     padding-bottom: 94px;
     
 }
@@ -234,6 +234,7 @@ img{
 .team-section{
     padding-top: 94px;
     padding-bottom: 94px;
+    
    
 }
 .list-team-title{
@@ -255,19 +256,26 @@ img{
     display: flex;
     margin-left: -30px;
 }
-
+.team-description{
+padding-top: 30px;
+padding-bottom: 30px;
+}
 .team-item{
     width: 270px;
     margin-left: 30px;
+    outline: 1px solid #F5F4FA;
+    border-radius: 4px;
 }
 
               /* Стилизация футера */
 .footer{
     background: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
     
 }
 .footer-logo{
-    padding-top: 60px;
+    
     margin-bottom: 20px;
     margin-left: 0px;
 }
@@ -276,13 +284,14 @@ img{
     color: #FFFFFF;
 }
 .adress{
-    padding-bottom: 60px;
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     
 }
-.list-footer .link{
+
+.adress-item{
     margin-bottom: 9px;
      font-style:normal;
      color: rgba(255, 255, 255, 0.6);
@@ -298,14 +307,20 @@ img{
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.list-buttons .button{
+
+.button-item{
+    margin-right: 8px;
     font-family: inherit;
     font-weight: 500;
-    font-size: 16px;
+    font-size:16px;
     line-height: 1.62;
     text-align: center;
 }
+.button-item:last-child{
+    margin-right: 0px;
+}
 .list-buttons{
+   
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -316,9 +331,14 @@ img{
     flex-wrap: wrap;
     margin-left: -30px;
     margin-bottom: -30px;
-    justify-content: space-between;
-    
 }
+.list-example >.portfolio-item{
+    flex-basis: var(100%/3 -30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #ececec;
+}    
+
 /* .list-example{
     display: flex;
     flex-wrap: wrap;
@@ -330,14 +350,14 @@ img{
     margin: 30px;
     outline: 2px solid tomato; 
 }*/
-.portfolio-item{
-   
-    flex-basis: ((100%/3)-30px);
-    margin-left: 30px;
-    margin-bottom: 30px;
-    
+
+
+.item-description {
+    padding: 20px 24px;
 }
 .list-example-title{
+    margin: 0px;
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -346,6 +366,7 @@ img{
     color:var(--title-text-color);
 }
 .list-example-text{
+    margin: 0px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
